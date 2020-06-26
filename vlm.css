@@ -1,0 +1,124 @@
+/* CSS reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/* segítő színek: 
+.profile-card {
+  background-color: hsla(60, 100%, 50%, .4);
+}
+
+.head {
+  background-color: rgba(30, 160, 35, 0);
+}
+
+.content {
+  background-color: rgba(30, 160, 35, 0.5);
+}
+
+.profil-image {
+  background-color: rgba(150, 45, 150, 0.5);
+}
+
+.name-headline {
+  background-color: rgba(150, 45, 150, 0.5);
+}
+
+.about {
+  background-color: rgba(150, 45, 150, 0.5);
+}
+
+.links {
+  background-color: rgba(150, 45, 150, 0.5);
+}
+*/
+
+body {
+  float: right;
+  height: 100vh;
+  background: url('assets/vlm_backg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: rgba(215, 213, 204, 0.9);
+  margin: 2%;
+}
+
+.profile-card {
+  max-width: calc(100vw - 10px);
+  border-radius: 4px;
+  width: 700px;
+  height: 600px;
+}
+
+.head, .links {
+  text-align: center;
+}
+
+.head, .content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+img {
+  width: 50px;
+  height: 100px;
+  float: right;
+  padding: 1px;
+  position: relative;
+  margin-top: 60px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.head, .about {
+  margin-bottom: 10%;
+}
+
+.content {
+  width: 400px;
+  padding: 5% 10%;
+  float: left;
+}
+
+h1:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+  filter: grayscale(20%);
+  color: white;
+}
+
+h2 {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+#text {
+  text-align: justify;
+  width: 460px;
+  border-top: 1px solid hsla(0, 0%, 30%, .8);
+}
+
+h1 {
+  font-variant: small-caps;
+  font-size: 35px;
+  filter: grayscale(50%);
+}
+
+li {
+  font-size: 40px;
+  display: inline;
+}
+
+#link {
+  color: purple;
+  font-size: 20px;
+}
+
+#name-headline {
+  text-align: center;
+}
