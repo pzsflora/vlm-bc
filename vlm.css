@@ -48,7 +48,6 @@ body {
 
 .profile-card {
   max-width: calc(100vw - 10px);
-  border-radius: 4px;
   width: 700px;
   height: 600px;
 }
@@ -63,12 +62,16 @@ body {
 }
 
 img {
-  width: 50px;
-  height: 100px;
-  float: right;
-  padding: 1px;
-  position: relative;
-  margin-top: 60px;
+  width: 100px;
+  height: 200px;
+  position: fixed;
+  right: 0;
+  margin: 15px;
+  margin-right: 80px;
+}
+
+a {
+  cursor: pointer;
 }
 
 ul {
@@ -80,9 +83,12 @@ ul {
 }
 
 .content {
-  width: 400px;
-  padding: 5% 10%;
-  float: left;
+  padding: 1% 5%;
+  background-color: aqua
+  text-align: justify;
+  width: 660px;
+  border-top: 1px solid hsla(0, 0%, 30%, .8);
+  margin-top: 20px;
 }
 
 h1:hover {
@@ -97,12 +103,6 @@ h2 {
   text-decoration: underline;
 }
 
-#text {
-  text-align: justify;
-  width: 460px;
-  border-top: 1px solid hsla(0, 0%, 30%, .8);
-}
-
 h1 {
   font-variant: small-caps;
   font-size: 35px;
@@ -115,10 +115,10 @@ li {
 }
 
 #link {
-  color: purple;
-  font-size: 20px;
+  font-size: 25px;
+  
 }
 
-#name-headline {
+.name-headline {
   text-align: center;
 }
