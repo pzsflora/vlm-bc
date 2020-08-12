@@ -1,161 +1,123 @@
-/* CSS reset */
-
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  font-size: 100%;
 }
-
-/* help colours: 
-.profile-card {
-  background-color: hsla(60, 100%, 50%, .4);
-}
-
-.head {
-  background-color: rgba(30, 160, 35, 0);
-}
-
-.content {
-  background-color: rgba(30, 160, 35, 0.5);
-}
-
-.profil-image {
-  background-color: rgba(150, 45, 150, 0.5);
-}
-
-.name-headline {
-  background-color: rgba(150, 45, 150, 0.5);
-}
-
-.about {
-  background-color: rgba(150, 45, 150, 0.5);
-}
-
-.links {
-  background-color: rgba(150, 45, 150, 0.5);
-}
-*/
 
 body {
-  float: right;
-  height: 100vh;
   background: url('assets/vlm_backg.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: rgba(215, 213, 204, 0.9);
-  margin: 2%;
-  font-family: 'Libre Baskerville'; 'Times New Roman', serif;
-}
-
-.profile-card {
-  max-width: calc(100vw - 10px);
-  width: 44rem;
-  height: 37rem;
-}
-
-.head, .links {
-  text-align: center;
-}
-
-.head, .content {
-  width: 90%;
-  margin: 0 auto;
-}
-
-img {
-  width: 6rem;
-  height: 12rem;
-  position: fixed;
-  right: 0;
-  margin: 1rem;
-  margin-right: 5rem;
+  color: white;
 }
 
 a {
   cursor: pointer;
 }
 
-ul {
-  list-style-type: none;
+a:hover {
+  color: rgb(0, 65, 255);
 }
 
-.head, .about {
-  margin-bottom: 10%;
+                        /* segítő színek */
+/*
+.profile-card {
+  background-color: rgb(255, 0, 0, .4);
+}
+
+.headline {
+  background-color: rgb(200, 80, 0, .4);
+}
+
+.links {
+  background-color: rgb(100, 20, 40, .4);
 }
 
 .content {
-  padding: 1% 5%;
-  text-align: justify;
-  width: 41rem;
-  border-top: 1px solid hsla(0, 0%, 30%, .8);
-  margin-top: 1.5rem;
+  background-color: rgb(0, 0, 130, .4);
+}*/
+
+                            /* igazítás */
+
+.profile-card {
+  width: 70vw;
+  max-width: 45rem;
+  height: 50vh;
+  margin-right: 2%;
+  margin-top: 2%;
+  float: right;
+  padding: 1rem;
 }
+
+body {    /*flexbox*/
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  height: 100vh;
+}
+
+.profile-card {
+  padding: 0.0625rem;
+  border-radius: 4%;
+}
+
+.address {
+  text-align: center;
+}
+
+a {
+  font-size: 2.3rem;
+  color: rgb(110, 240, 255);
+}
+
+.links {
+  text-align: center;
+  padding: 1rem;
+}
+
+li {
+  display: inline-block;
+  padding: 0.7rem;
+}
+
+.content {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+
+                          /* ikon igazítása */
+
+img {
+  float: right;
+  transition: 2s;
+  transition-delay: .5s;
+  padding: 1rem;
+  margin-right: 2rem;
+}
+
+
+                          /* tipográfia */
+
+body {
+  font-family: "Josefin Sans", "Times New Roman", sans-serif;
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+h1 {
+  font-family: Asset, Arial, cursive;
+  font-size: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+                          /* extra */
 
 h1:hover {
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;
   filter: grayscale(20%);
-  color: white;
-}
-
-h2 {
-  font-size: 1rem;
-  text-decoration: underline;
-}
-
-h1 {
-  font-variant: small-caps;
-  font-size: 2rem;
-  filter: grayscale(50%);
-}
-
-li {
-  font-size: 3rem;
-  display: inline;
-}
-
-#link {
-  font-size: 1.5rem;
-}
-
-.name-headline {
-  text-align: center;
-  position: relative;
-}
-
-p {
-  font-family: Montserrat, Arial, sans-serif;
-}
-
-                      /* mobile first - 425px */
-
-@media (max-width: 425px) {
-  h1 {
-    margin-top: 2rem;
-    font-size: 2.5rem;
-  }
-  
-  .content {
-    margin-top: 2rem;
-    font-size: 1.2rem;
-  }
-  
-}
-
-                        /* mobile first - 768px */
-
-@media (max-width: 768px) {
-  img {
-    width: 4rem;
-    height: 8rem;
-  }
-  
-  h2 {
-    margin-top: -4rem;
-  }
-  
-  .content {
-    width: 33rem;
-    float: right;
-  }
 }
