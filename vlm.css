@@ -132,14 +132,42 @@ h1:hover {
   }
   
   .profile-card {
-    height: 30rem;
+    height: 31rem;
   }
   
 }
 
+ 
+                           /* mobil - 375px */
+
+@media screen and (max-width: 375px) {
+  
+  body {
+    font-size: 0.9rem;
+  }
+  
+  h1 {
+    font-size: 1.4rem;
+  }
+  
+  .profile-card {
+    height: 26rem;
+  }
+}
+
+                           /* mobil - 320px */
+
 @media screen and (max-width: 321px) {
   
   body {
-    font-size: 0.08rem;
+    font-size: 0.7rem;
+  }
+  
+  h1 {
+    font-size: 0.9rem;
+  }
+  
+  .profile-card {
+    height: 22rem;
   }
 }
