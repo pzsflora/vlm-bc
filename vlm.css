@@ -3,9 +3,9 @@
 }
 
 body {
-  background: url('assets/vlm_backg.jpg') no-repeat center center fixed;
+  background: url('assets/piano_backg.jpg') no-repeat center center fixed;
   background-size: cover;
-  color: white;
+  color: black;
 }
 
 a {
@@ -37,25 +37,19 @@ a:hover {
                             /* igazítás */
 
 .profile-card {
-  width: 70vw;
-  max-width: 45rem;
-  height: 50vh;
-  margin-right: 2%;
-  margin-top: 2%;
-  float: right;
-  padding: 1rem;
+  background-color: rgba(255, 255, 255, .9);
+  max-width: 38rem;
+  height: 70vh;
+  border: 0.1rem solid black;
+  padding: 0.0625rem;
+  border-radius: 4%;
 }
 
 body {    /*flexbox*/
   display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
-}
-
-.profile-card {
-  padding: 0.0625rem;
-  border-radius: 4%;
 }
 
 .address {
@@ -64,12 +58,13 @@ body {    /*flexbox*/
 
 a {
   font-size: 2.3rem;
-  color: rgb(110, 240, 255);
+  color: rgb(232, 225, 89);
 }
 
 .links {
   text-align: center;
   padding: 1rem;
+  margin-top: 0.6rem;
 }
 
 li {
@@ -79,18 +74,19 @@ li {
 
 .content {
   padding: 1rem;
-  margin-top: 1rem;
 }
 
 
-                          /* ikon igazítása */
+                          /* ikonok igazítása */
 
 img {
   float: right;
-  transition: 2s;
-  transition-delay: .5s;
   padding: 1rem;
-  margin-right: 2rem;
+  max-width: 6rem;
+}
+
+.second_pic {
+  float: left;
 }
 
 
@@ -104,7 +100,7 @@ body {
 
 h1 {
   font-family: Asset, Arial, cursive;
-  font-size: 2rem;
+  font-size: 2.3rem;
   padding: 0.5rem;
   text-align: center;
 }
@@ -120,4 +116,30 @@ h1:hover {
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;
   filter: grayscale(20%);
+}
+
+
+                            /* mobil - 425px */
+
+@media screen and (max-width: 426px) {
+  
+  body {
+    font-size: 1.2rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .profile-card {
+    height: 30rem;
+  }
+  
+}
+
+@media screen and (max-width: 321px) {
+  
+  body {
+    font-size: 0.08rem;
+  }
 }
