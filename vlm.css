@@ -132,7 +132,7 @@ h1:hover {
   }
   
   .profile-card {
-    height: 31rem;
+    height: auto;
   }
   
 }
@@ -151,7 +151,7 @@ h1:hover {
   }
   
   .profile-card {
-    height: 26rem;
+    height: auto;
   }
 }
 
@@ -168,6 +168,6 @@ h1:hover {
   }
   
   .profile-card {
-    height: 22rem;
+    height: auto;
   }
 }
