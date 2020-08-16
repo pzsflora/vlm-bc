@@ -63,7 +63,6 @@ a {
 
 .links {
   text-align: center;
-  padding: 1rem;
   margin-top: 0.6rem;
 }
 
@@ -85,7 +84,7 @@ img {
   width: 6rem;
   height: auto;
   max-width: 6rem;
-  margin-top: -5.5rem;
+  margin-top: -8rem;
 }
 
 .second_pic {
@@ -141,6 +140,12 @@ h1:hover {
   
   img {
     max-width: 4em;
+    margin-top: -5rem;
+  }
+  
+  h2 {
+    font-size: 1rem;
+    text-decoration: none;
   }
   
 }
