@@ -82,6 +82,8 @@ li {
 img {
   float: right;
   padding: 1rem;
+  width: 6rem;
+  height: auto;
   max-width: 6rem;
 }
 
@@ -119,55 +121,26 @@ h1:hover {
 }
 
 
-                            /* mobil - 425px */
+                            /* mobil - 600px */
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 600px) {
   
   body {
     font-size: 1.2rem;
   }
   
   h1 {
-    font-size: 1rem;
+    font-size: 2rem;
+    margin-top: 2rem;
   }
   
   .profile-card {
     height: auto;
   }
   
+  img {
+    max-width: 4em;
+  }
+  
 }
 
- 
-                           /* mobil - 375px */
-
-@media screen and (max-width: 375px) {
-  
-  body {
-    font-size: 0.9rem;
-  }
-  
-  h1 {
-    font-size: 1rem;
-  }
-  
-  .profile-card {
-    height: auto;
-  }
-}
-
-                           /* mobil - 320px */
-
-@media screen and (max-width: 321px) {
-  
-  body {
-    font-size: 0.7rem;
-  }
-  
-  h1 {
-    font-size: 0.5rem;
-  }
-  
-  .profile-card {
-    height: auto;
-  }
-}
