@@ -85,6 +85,7 @@ img {
   width: 6rem;
   height: auto;
   max-width: 6rem;
+  margin-top: -5.5rem;
 }
 
 .second_pic {
@@ -131,7 +132,7 @@ h1:hover {
   
   h1 {
     font-size: 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
   
   .profile-card {
